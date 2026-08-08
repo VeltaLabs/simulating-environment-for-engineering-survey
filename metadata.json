@@ -1,0 +1,6 @@
+{
+  "name": "Leveling & Earthworks Visualizer",
+  "description": "Optical surveying data calculator and canvas terrain cut/fill visualizer using the Height of Collimation (HOC) method.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
