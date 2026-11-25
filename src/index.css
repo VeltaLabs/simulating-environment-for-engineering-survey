@@ -1,1 +1,75 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #090d16;
+    color: #f1f5f9;
+  }
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom Range Slider */
+input[type="range"].engineering-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 999px;
+  background: #1e293b;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="range"].engineering-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #f59e0b;
+  border: 2px solid #f8fafc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+input[type="range"].engineering-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+input[type="range"].engineering-slider.slider-cyan::-webkit-slider-thumb {
+  background: #38bdf8;
+}
+
+/* Subtle dark scrollbars for survey table */
+.survey-scroll::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+.survey-scroll::-webkit-scrollbar-track {
+  background: #090d16;
+}
+
+.survey-scroll::-webkit-scrollbar-thumb {
+  background: #24344d;
+  border-radius: 4px;
+}
+
+.survey-scroll::-webkit-scrollbar-thumb:hover {
+  background: #334a6d;
+}
